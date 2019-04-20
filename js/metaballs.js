@@ -3,14 +3,19 @@
 project.currentStyle = {
     fillColor: '#2e2f30'
 };
+var canvas = document.getElementById('meta-ball');
 
-var ballPositions = [[255, 220]];
-
+//var ctx = canvas.getContent('2d');
+var ballPosition = [canvas.offsetWidth/2,canvas.offsetHeight/2];
 var handle_len_rate = 2.4;
 var circlePaths = [];
 
+//var background = new Image();
+//background.src = "img/_MG_8714-5.jpg";
+//canvas.appendChild(background);
+
 var circlePath = new Path.Circle({
-    center: ballPositions[0],
+    center: ballPosition,
     radius: 200,
 });
 circlePaths.push(circlePath);
@@ -19,7 +24,7 @@ circlePaths[0].selected = true;
 circlePaths[0].selectedColor = '#ff485e';
 
 var largeCircle = new Path.Circle({
-    center: [535, 120],
+    center: ballPosition,
     radius: 80
 });
 circlePaths.push(largeCircle);
