@@ -5,14 +5,12 @@ project.currentStyle = {
 };
 var canvas = document.getElementById('meta-ball');
 
-//var ctx = canvas.getContent('2d');
+var ctx = canvas.getContent('2d');
 var ballPosition = [canvas.offsetWidth/2,canvas.offsetHeight/2];
 var handle_len_rate = 2.4;
 var circlePaths = [];
 
-//var background = new Image();
-//background.src = "img/_MG_8714-5.jpg";
-//canvas.appendChild(background);
+
 
 var circlePath = new Path.Circle({
     center: ballPosition,
