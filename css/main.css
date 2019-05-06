@@ -8,21 +8,30 @@
     background-image: url("../img/plane_wing.jpg");
     background-size: cover;
     background-position: 50% 30%;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 900px;
     overflow: hidden;
 }
 
 .portrait-link {
-
+    background-image: url("../img/Emily_1.jpg");
+    background-size: cover;
+    height: 300px;
+    overflow: hidden;
 }
 
 .landscape-link {
-
+    background-image: url("../img/hawaian.jpg");
+    background-size: cover;
+    height: 300px;
+    overflow: hidden;
 }
 
 .photoshop-link {
-
+    background-image: url("../img/swis_1.jpg");
+    background-size: cover;
+    height: 300px;
+    overflow: hidden;
 }
 
 .main-content .photos .photo-item {
